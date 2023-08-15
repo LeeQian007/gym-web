@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sanss", sans-serif;
+  @apply text-gray-500;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animation-pop-up {
+  animation: popUp 0.5s ease-in;
+}
+
+/* @keyframes popDown {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+}
+
+.animation-pop-down {
+  animation: popDown 0.5s ease-in;
+} */
